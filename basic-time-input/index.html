@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div
+      style="
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div class="inputWrapper">
+        <label for="hour">時間</label>
+        <div class="timeField">
+          <div class="timeInputs">
+            <input
+              type="number"
+              inputmode="numeric"
+              id="hour"
+              class="timeElement"
+              placeholder="--"
+              min="0"
+              max="99"
+              onkeyup="checkNumber(this)"
+            />
+            <span style="color: gray">:</span>
+            <input
+              type="number"
+              inputmode="numeric"
+              class="timeElement"
+              placeholder="--"
+              min="0"
+              max="59"
+              onkeyup="checkNumber(this)"
+            />
+          </div>
+        </div>
+        <div style="width: 300px; height: 400px; padding-top: 20px">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              background-color: aliceblue;
+              padding: 0 5px 20px 5px;
+            "
+          >
+            <h2>おまけ</h2>
+            <input type="time" class="omake" />
+            <input type="date" class="omake" />
+            <input type="datetime-local" name="" id="" class="omake" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

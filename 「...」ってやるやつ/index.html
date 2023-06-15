@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sticky-note {
+        width: 200px;
+        height: 200px;
+        background-color: antiquewhite;
+        box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+          6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+          12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+          22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+          41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+          100px 100px 80px rgba(0, 0, 0, 0.07);
+      }
+      p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sticky-note">
+      <p>
+        こんにちは。私の名前はタスです。名古屋に住み名古屋を愛し、名古屋に愛されている者です。そんな私が最近ハマっていることは乾電池集めです。あれはいいいですよね。単1だったり単3だったり単4だったり色々種類があります。そう言えばお蕎麦は好きですか？僕はパスタよりもラーメン派です。
+      </p>
+    </div>
+  </body>
+</html>
